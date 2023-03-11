@@ -20,7 +20,7 @@
       body{
         background-color: #212121;
       }
-      button {
+      .tom {
  --color: #ffcc00;
  font-family: inherit;
  display: inline-block;
@@ -39,7 +39,7 @@
  color: var(--color);
 }
 
-button:before {
+.tom:before {
  content: "";
  position: absolute;
  z-index: -1;
@@ -49,22 +49,22 @@ button:before {
  border-radius: 50%;
 }
 
-button:hover {
+.tom:hover {
  color: #fff;
 }
 
-button:before {
+.tom:before {
  top: 100%;
  left: 100%;
  transition: all .7s;
 }
 
-button:hover:before {
+.tom:hover:before {
  top: -30px;
  left: -30px;
 }
 
-button:active:before {
+.tom:active:before {
  background: #ffcc00;
  transition: background 0s;
 }
@@ -144,7 +144,7 @@ button:active:before {
     </div>
   </div>
   <div class="col-12">
-    <button> sign in
+    <button class="tom"> sign in
 </button>
   </div>
 </form>
